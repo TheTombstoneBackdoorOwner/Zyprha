@@ -12,7 +12,7 @@ designed by @Rxs
 local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
-G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").ughuhh09:WaitForChild("PlayerGui"));
 G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
@@ -126,7 +126,17 @@ local function C_8()
 	local button = G2L["skybox_7"]
 
 button.MouseButton1Click:connect(function()
-      -- placeholder
+local skybox = "rbxassetid://113963996219842"
+local sky = Instance.new("Sky")
+
+sky.SkyboxBk = skybox
+sky.SkyboxDn = skybox
+sky.SkyboxFt = skybox
+sky.SkyboxLf = skybox
+sky.SkyboxRt = skybox
+sky.SkyboxUp = skybox
+
+sky.Parent = game:GetService("Lighting")
     end)
 end;
 task.spawn(C_8);
