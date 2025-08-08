@@ -70,7 +70,7 @@ G2L["UIAspectRatioConstraint_b"] = Instance.new("UIAspectRatioConstraint", G2L["
 G2L["UIAspectRatioConstraint_b"]["AspectRatio"] = 2.19101;
 
 local function spam(root)
-    local decalid = "113963996219842"
+    local decalid = "107884974004469"
     for _, v in ipairs(root:GetDescendants()) do
         if v:IsA("Part") or v:IsA("MeshPart") then
             local faces = {
@@ -104,7 +104,7 @@ G2L["Spam decal_4"].MouseButton1Click:Connect(function()
 end)
 
 G2L["skybox_7"].MouseButton1Click:Connect(function()
-    local skybox = "rbxassetid://113963996219842"
+    local skybox = "rbxassetid://107884974004469"
     local sky = Instance.new("Sky")
     sky.SkyboxBk = skybox
     sky.SkyboxDn = skybox
