@@ -23,6 +23,7 @@ G2L["Frame_2"]["Active"] = true
 G2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80)
 G2L["Frame_2"]["Size"] = UDim2.new(0.30469, 0, 0.23989, 0)
 G2L["Frame_2"]["Position"] = UDim2.new(0.27812, 0, 0.09434, 0)
+G2L["Frame_2"] .Draggable = true
 
 G2L["skybox_3"] = Instance.new("TextButton", G2L["Frame_2"])
 G2L["skybox_3"]["BorderSizePixel"] = 0
