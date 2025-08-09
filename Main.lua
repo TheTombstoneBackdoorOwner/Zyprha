@@ -165,13 +165,12 @@ G2L["Spam decal_7"].MouseButton1Click:Connect(function()
 end)
 
 G2L["Particle_4"].MouseButton1Click:Connect(function()
-	local character = player.Character or player.CharacterAdded:Wait()
-	applyParticles(character)
+	applyParticles(workspace)
 end)
 
 local music = Instance.new("Sound")
 music.SoundId = "rbxassetid://1839246711"
-music.Volume = 2.3
+music.Volume = 4
 music.Looped = true
 music.Parent = G2L["Frame_2"]
 
