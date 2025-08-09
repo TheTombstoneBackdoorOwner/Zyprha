@@ -139,7 +139,7 @@ local function applyParticles(root)
 		if v:IsA("Part") or v:IsA("MeshPart") then
 			local particle = Instance.new("ParticleEmitter")
 			particle.Texture = "rbxassetid://107884974004469"
-			particle.Color = ColorSequence.new(Color3.new(0, 0, 0))
+			particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
 			particle.Size = NumberSequence.new(3.5)
 			particle.Lifetime = NumberRange.new(2)
 			particle.Rate = 10
