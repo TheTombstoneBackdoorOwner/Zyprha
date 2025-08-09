@@ -140,9 +140,9 @@ local function applyParticles(root)
 			local particle = Instance.new("ParticleEmitter")
 			particle.Texture = "rbxassetid://107884974004469"
 			particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
-			particle.Size = NumberSequence.new(0.5)
-			particle.Lifetime = NumberRange.new(1)
-			particle.Rate = 15
+			particle.Size = NumberSequence.new(3.5)
+			particle.Lifetime = NumberRange.new(2)
+			particle.Rate = 13
 			particle.Parent = v
 		end
 	end
@@ -161,8 +161,7 @@ G2L["skybox_3"].MouseButton1Click:Connect(function()
 end)
 
 G2L["Spam decal_7"].MouseButton1Click:Connect(function()
-	local character = player.Character or player.CharacterAdded:Wait()
-	spam(character)
+	spam(workspace)
 end)
 
 G2L["Particle_4"].MouseButton1Click:Connect(function()
