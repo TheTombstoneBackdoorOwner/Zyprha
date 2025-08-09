@@ -5,6 +5,148 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.00994027127, 0, 0.74417007, 0)
+Frame.Size = UDim2.new(0, 187, 0, 187)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0267379675, 0, 0.0374331549, 0)
+ImageLabel.Size = UDim2.new(0, 177, 0, 177)
+ImageLabel.Image = "rbxassetid://111511595139013"
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(1.09090912, 0, 0.251336902, 0)
+Frame_2.Size = UDim2.new(0, 278, 0, 98)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000229869809, 0, -0.179540515, 0)
+TextLabel.Size = UDim2.new(0, 278, 0, 88)
+TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Text = "Zyphra: Private GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.134633452, 0, 0.296862841, 0)
+TextLabel_2.Size = UDim2.new(0, 202, 0, 88)
+TextLabel_2.Font = Enum.Font.SourceSansSemibold
+TextLabel_2.Text = "Logo by: 5D."
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 19.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.134633452, 0, 0.0868629888, 0)
+TextLabel_3.Size = UDim2.new(0, 202, 0, 88)
+TextLabel_3.Font = Enum.Font.SourceSansSemibold
+TextLabel_3.Text = "Coded and Made by: Ryan/rxs"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 19.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextStrokeTransparency = 0.000
+TextLabel_3.TextWrapped = true
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0427807495, 0, 0.053475935, 0)
+ImageLabel_2.Size = UDim2.new(0, 172, 0, 172)
+ImageLabel_2.Image = "rbxassetid://117813815722335"
+
+-- Scripts:
+
+local function HQFKO_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local path = script.Parent
+	
+	while true do
+		wait()
+		path.Rotation = path.Rotation +3.10
+	end
+end
+coroutine.wrap(HQFKO_fake_script)()
+local function QWQV_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local RANDOMNO = 1 --math.random(1,30)
+	
+	local Wait = 1
+	
+	local function Tween(number)
+		local TS = game:GetService("TweenService")
+		local A = TweenInfo.new(
+			Wait,
+			Enum.EasingStyle.Sine,
+			Enum.EasingDirection.InOut,
+			0,
+			false,
+			0
+		)
+		local B = {
+			Rotation = number
+		}
+		TS:Create(script.Parent,A,B):Play()
+	end
+	local t = false
+	while wait((Wait)+(.001)) do
+		if t == true then
+			t = false
+			Tween(3)
+		elseif t == false then
+			t = true
+			Tween(-3)
+		end
+	end
+end
+coroutine.wrap(QWQV_fake_script)()
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
