@@ -139,10 +139,10 @@ local function applyParticles(root)
 		if v:IsA("Part") or v:IsA("MeshPart") then
 			local particle = Instance.new("ParticleEmitter")
 			particle.Texture = "rbxassetid://107884974004469"
-			particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
+			particle.Color = ColorSequence.new(Color3.new(0, 0, 0))
 			particle.Size = NumberSequence.new(3.5)
 			particle.Lifetime = NumberRange.new(2)
-			particle.Rate = 13
+			particle.Rate = 10
 			particle.Parent = v
 		end
 	end
@@ -171,7 +171,7 @@ end)
 
 local music = Instance.new("Sound")
 music.SoundId = "rbxassetid://1839246711"
-music.Volume = 1
+music.Volume = 2.3
 music.Looped = true
 music.Parent = G2L["Frame_2"]
 
