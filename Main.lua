@@ -12,7 +12,7 @@ designed by @Rcs
 local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
-G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").ughuhh09:WaitForChild("PlayerGui"));
 G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
