@@ -128,10 +128,11 @@ local function applyParticles(root)
 				p.Texture = "rbxassetid://107884974004469"
 				p.Color = ColorSequence.new(Color3.new(1, 1, 1))
 				p.LightEmission = 0.7
-				p.Size = NumberSequence.new(0.5)
+				p.Size = NumberSequence.new(2)
 				p.Rate = 50
 				p.Lifetime = NumberRange.new(1)
-				p.Speed = NumberRange.new(2)
+				p.Speed = NumberRange.new(1
+				)
 				p.Parent = v
 			end
 		end
