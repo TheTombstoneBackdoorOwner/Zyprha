@@ -23,7 +23,7 @@ G2L["Frame_2"]["Active"] = true
 G2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80)
 G2L["Frame_2"]["Size"] = UDim2.new(0.30469, 0, 0.23989, 0)
 G2L["Frame_2"]["Position"] = UDim2.new(0.27812, 0, 0.09434, 0)
-G2L["Frame_2"] .Draggable = true
+G2L["Frame_2"].Draggable = true
 
 G2L["skybox_3"] = Instance.new("TextButton", G2L["Frame_2"])
 G2L["skybox_3"]["BorderSizePixel"] = 0
@@ -132,8 +132,7 @@ local function applyParticles(root)
 				p.Size = NumberSequence.new(2)
 				p.Rate = 50
 				p.Lifetime = NumberRange.new(1)
-				p.Speed = NumberRange.new(1
-				)
+				p.Speed = NumberRange.new(1)
 				p.Parent = v
 			end
 		end
@@ -172,6 +171,18 @@ G2L["Particle_8"].MouseButton1Click:Connect(function()
 		player.CharacterAdded:Connect(onCharacterAdded)
 	end
 	applyParticles(workspace)
+end)
+
+local music = Instance.new("Sound")
+music.SoundId = "rbxassetid://1839246711"
+music.Volume = 1
+music.Looped = true
+music.Parent = G2L["Frame_2"]
+
+local isPlaying = false
+
+G2L["music_9"].MouseButton1Click:Connect(function()
+		music:Play()
 end)
 
 return G2L["ScreenGui_1"], require
