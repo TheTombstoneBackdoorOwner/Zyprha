@@ -6,7 +6,7 @@
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @Rxs
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 
-designed by @Rcs
+designed by @Rxs
 ]=]
 
 local CollectionService = game:GetService("CollectionService");
