@@ -10,7 +10,7 @@ designed by @Rxs
 ]=]
 
 local Players = game:GetService("Players")
-local player = Players.LocalPlayer
+local player = Players.ughuhh09
 local playerGui = player:WaitForChild("PlayerGui")
 local G2L = {}
 
