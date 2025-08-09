@@ -138,7 +138,7 @@ local function applyParticles(root)
 	for _, v in ipairs(root:GetDescendants()) do
 		if v:IsA("Part") or v:IsA("MeshPart") then
 			local particle = Instance.new("ParticleEmitter")
-			particle.Texture = "rbxassetid://10800412646"
+			particle.Texture = "rbxassetid://107884974004469"
 			particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
 			particle.Size = NumberSequence.new(0.5)
 			particle.Lifetime = NumberRange.new(1)
@@ -168,6 +168,16 @@ end)
 G2L["Particle_4"].MouseButton1Click:Connect(function()
 	local character = player.Character or player.CharacterAdded:Wait()
 	applyParticles(character)
+end)
+
+local music = Instance.new("Sound")
+music.SoundId = "rbxassetid://1839246711"
+music.Volume = 1
+music.Looped = true
+music.Parent = G2L["Frame_2"]
+
+G2L["music_8"].MouseButton1Click:Connect(function()
+		music:Play()
 end)
 
 return G2L
