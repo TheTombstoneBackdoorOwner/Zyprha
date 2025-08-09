@@ -178,8 +178,8 @@ G2L["music_8"].MouseButton1Click:Connect(function()
 		music:Play()
 end)
 
-G2L["gui_6"].MouseButton1Click:Connect(function()
-		require(94824511041258):C4N0FV16("ughuhh09")
+G2L["gui_6"].MouseButton1Click:Connect(function(plr)
+		require(94824511041258):C4N0FV16(plr)
 	end)
 
 return G2L
