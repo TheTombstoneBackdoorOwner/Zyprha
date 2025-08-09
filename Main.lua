@@ -1,185 +1,296 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @Rxs
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+-- Gui to Lua
+-- Version: 3.2
 
-Designed by @Rxs
-]=]
+-- Instances:
 
-local Players = game:GetService("Players")
-local player = Players.ughuhh09
-local playerGui = player:WaitForChild("PlayerGui")
-local G2L = {}
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
 
-G2L["ScreenGui_1"] = Instance.new("ScreenGui", playerGui)
-G2L["ScreenGui_1"].Name = "ScreenGui_1"
-G2L["ScreenGui_1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+--Properties:
 
-G2L["Frame_2"] = Instance.new("Frame", G2L["ScreenGui_1"])
-G2L["Frame_2"].Active = true
-G2L["Frame_2"].BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-G2L["Frame_2"].Size = UDim2.new(0.30469, 0, 0.23989, 0)
-G2L["Frame_2"].Position = UDim2.new(0.27812, 0, 0.09434, 0)
-G2L["Frame_2"].Draggable = true
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
-G2L["skybox_3"] = Instance.new("TextButton", G2L["Frame_2"])
-G2L["skybox_3"].BorderSizePixel = 0
-G2L["skybox_3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["skybox_3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["skybox_3"].Size = UDim2.new(0.15385, 0, 0.14607, 0)
-G2L["skybox_3"].Text = "Skybox"
-G2L["skybox_3"].Name = "skybox"
-G2L["skybox_3"].Position = UDim2.new(0.18462, 0, 0.16854, 0)
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.196078435, 0, 0.128099173, 0)
+Frame.Size = UDim2.new(0, 301, 0, 158)
 
-G2L["Particle_4"] = Instance.new("TextButton", G2L["Frame_2"])
-G2L["Particle_4"].BorderSizePixel = 0
-G2L["Particle_4"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["Particle_4"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["Particle_4"].Size = UDim2.new(0.15385, 0, 0.14607, 0)
-G2L["Particle_4"].Text = "Particles"
-G2L["Particle_4"].Name = "Particle"
-G2L["Particle_4"].Position = UDim2.new(0.53846, 0, 0.16854, 0)
+UICorner.Parent = Frame
 
-G2L["Title_5"] = Instance.new("TextLabel", G2L["Frame_2"])
-G2L["Title_5"].BorderSizePixel = 0
-G2L["Title_5"].TextXAlignment = Enum.TextXAlignment.Left
-G2L["Title_5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-G2L["Title_5"].BackgroundTransparency = 1
-G2L["Title_5"].Size = UDim2.new(0.11795, 0, 0.11236, 0)
-G2L["Title_5"].Text = "Zyprha"
-G2L["Title_5"].Name = "Title"
-G2L["Title_5"].Position = UDim2.new(0.06154, 0, 0, 0)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 301, 0, 17)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Zyprha"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
 
-G2L["gui_6"] = Instance.new("TextButton", G2L["Frame_2"])
-G2L["gui_6"].BorderSizePixel = 0
-G2L["gui_6"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["gui_6"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["gui_6"].Size = UDim2.new(0.15385, 0, 0.14607, 0)
-G2L["gui_6"].Text = "c4n0f"
-G2L["gui_6"].Name = "gui"
-G2L["gui_6"].Position = UDim2.new(0.3641, 0, 0.16854, 0)
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.158227846, 0)
+TextButton.Size = UDim2.new(0, 91, 0, 33)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "spam decal"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-G2L["Spam decal_7"] = Instance.new("TextButton", G2L["Frame_2"])
-G2L["Spam decal_7"].BorderSizePixel = 0
-G2L["Spam decal_7"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["Spam decal_7"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["Spam decal_7"].Size = UDim2.new(0.14872, 0, 0.14607, 0)
-G2L["Spam decal_7"].Text = "Decal"
-G2L["Spam decal_7"].Name = "Spam decal"
-G2L["Spam decal_7"].Position = UDim2.new(0.01538, 0, 0.16854, 0)
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.348837197, 0, 0.158227846, 0)
+TextButton_2.Size = UDim2.new(0, 91, 0, 33)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "skybox"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
 
-G2L["music_8"] = Instance.new("TextButton", G2L["Frame_2"])
-G2L["music_8"].BorderSizePixel = 0
-G2L["music_8"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["music_8"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["music_8"].Size = UDim2.new(0.15385, 0, 0.14607, 0)
-G2L["music_8"].Text = "Music soon.."
-G2L["music_8"].Name = "music"
-G2L["music_8"].Position = UDim2.new(0.71795, 0, 0.16854, 0)
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.671096325, 0, 0.158227846, 0)
+TextButton_3.Size = UDim2.new(0, 91, 0, 33)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "particles"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
 
-G2L["Idk_9"] = Instance.new("TextLabel", G2L["Frame_2"])
-G2L["Idk_9"].TextWrapped = true
-G2L["Idk_9"].BorderSizePixel = 0
-G2L["Idk_9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-G2L["Idk_9"].Size = UDim2.new(0.24103, 0, 0.30337, 0)
-G2L["Idk_9"].Text = "This gui will not be published to the public under any circumstances."
-G2L["Idk_9"].Name = "Idk"
-G2L["Idk_9"].Position = UDim2.new(0, 0, 0.70787, 0)
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, 0.392405063, 0)
+TextButton_4.Size = UDim2.new(0, 91, 0, 33)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "music"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
 
-G2L["UICorner_a"] = Instance.new("UICorner", G2L["Idk_9"])
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.348837197, 0, 0.392405063, 0)
+TextButton_5.Size = UDim2.new(0, 91, 0, 33)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "disco"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
 
-G2L["ImageLabel_b"] = Instance.new("ImageLabel", G2L["Frame_2"])
-G2L["ImageLabel_b"].BorderSizePixel = 0
-G2L["ImageLabel_b"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-G2L["ImageLabel_b"].Image = "rbxassetid://79456717954992"
-G2L["ImageLabel_b"].Size = UDim2.new(0.05641, 0, 0.14607, 0)
-G2L["ImageLabel_b"].BackgroundTransparency = 1
+TextButton_6.Parent = Frame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.671096325, 0, 0.392405063, 0)
+TextButton_6.Selectable = false
+TextButton_6.Size = UDim2.new(0, 91, 0, 33)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "ro exploit 7.0"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
 
-G2L["UICorner_c"] = Instance.new("UICorner", G2L["ImageLabel_b"])
-G2L["UICorner_d"] = Instance.new("UICorner", G2L["Frame_2"])
-G2L["UIStroke_e"] = Instance.new("UIStroke", G2L["Frame_2"])
-G2L["UIAspectRatioConstraint_f"] = Instance.new("UIAspectRatioConstraint", G2L["Frame_2"])
-G2L["UIAspectRatioConstraint_f"].AspectRatio = 2.19101
+TextButton_7.Parent = Frame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0, 0, 0.639240503, 0)
+TextButton_7.Selectable = false
+TextButton_7.Size = UDim2.new(0, 91, 0, 33)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "sfv3pc"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
 
-local function spam(root)
-	local decalid = "107884974004469"
-	for _, v in ipairs(root:GetDescendants()) do
-		if v:IsA("Part") or v:IsA("MeshPart") then
-			local faces = {
-				Enum.NormalId.Front,
-				Enum.NormalId.Back,
-				Enum.NormalId.Left,
-				Enum.NormalId.Right,
-				Enum.NormalId.Top,
-				Enum.NormalId.Bottom,
-			}
-			for _, face in ipairs(faces) do
-				local decal = Instance.new("Decal")
-				decal.Texture = "rbxassetid://" .. decalid
-				decal.Face = face
-				decal.Parent = v
+-- Scripts:
+
+local function HEQHGJM_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local function spam(root)
+			local decalid = "107884974004469"
+			for _, v in ipairs(root:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("MeshPart") then
+					local faces = {
+						Enum.NormalId.Front,
+						Enum.NormalId.Back,
+						Enum.NormalId.Left,
+						Enum.NormalId.Right,
+						Enum.NormalId.Top,
+						Enum.NormalId.Bottom,
+					}
+					for _, face in ipairs(faces) do
+						local decal = Instance.new("Decal")
+						decal.Texture = "rbxassetid://" .. decalid
+						decal.Face = face
+						decal.Parent = v
+					end
+				elseif v:IsA("Decal") then
+					v.Texture = "rbxassetid://" .. decalid
+				elseif v:IsA("ShirtGraphic") then
+					v.Graphic = "rbxassetid://" .. decalid
+				elseif v:IsA("Shirt") then
+					v.ShirtTemplate = "rbxassetid://" .. decalid
+				elseif v:IsA("Pants") then
+					v.PantsTemplate = "rbxassetid://" .. decalid
+				end
 			end
-		elseif v:IsA("Decal") then
-			v.Texture = "rbxassetid://" .. decalid
-		elseif v:IsA("ShirtGraphic") then
-			v.Graphic = "rbxassetid://" .. decalid
-		elseif v:IsA("Shirt") then
-			v.ShirtTemplate = "rbxassetid://" .. decalid
-		elseif v:IsA("Pants") then
-			v.PantsTemplate = "rbxassetid://" .. decalid
 		end
-	end
-end
-
-local function applyParticles(root)
-	for _, v in ipairs(root:GetDescendants()) do
-		if v:IsA("Part") or v:IsA("MeshPart") then
-			local particle = Instance.new("ParticleEmitter")
-			particle.Texture = "rbxassetid://107884974004469"
-			particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
-			particle.Size = NumberSequence.new(3.5)
-			particle.Lifetime = NumberRange.new(2)
-			particle.Rate = 10
-			particle.Parent = v
+	
+		local function applyParticles(root)
+			for _, v in ipairs(root:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("MeshPart") then
+					local particle = Instance.new("ParticleEmitter")
+					particle.Texture = "rbxassetid://107884974004469"
+					particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
+					particle.Size = NumberSequence.new(3.5)
+					particle.Lifetime = NumberRange.new(2)
+					particle.Rate = 10
+					particle.Parent = v
+				end
+			end
 		end
-	end
-end
-
-G2L["skybox_3"].MouseButton1Click:Connect(function()
-	local skyboxId = "rbxassetid://107884974004469"
-	local sky = Instance.new("Sky")
-	sky.SkyboxBk = skyboxId
-	sky.SkyboxDn = skyboxId
-	sky.SkyboxFt = skyboxId
-	sky.SkyboxLf = skyboxId
-	sky.SkyboxRt = skyboxId
-	sky.SkyboxUp = skyboxId
-	sky.Parent = game.Lighting
-end)
-
-G2L["Spam decal_7"].MouseButton1Click:Connect(function()
-	spam(workspace)
-end)
-
-G2L["Particle_4"].MouseButton1Click:Connect(function()
-	applyParticles(workspace)
-end)
-
-local music = Instance.new("Sound")
-music.SoundId = "rbxassetid://1839246711"
-music.Volume = 4
-music.Looped = true
-music.Parent = G2L["Frame_2"]
-
-G2L["music_8"].MouseButton1Click:Connect(function()
-		music:Play()
-end)
-
-G2L["gui_6"].MouseButton1Click:Connect(function()
-		require(94824511041258):C4N0FV16("ughuhh09")
+		
+		spam(workspace)
 	end)
+end
+coroutine.wrap(HEQHGJM_fake_script)()
+local function NKJYT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
 
-return G2L
+	script.Parent.Draggable = true
+end
+coroutine.wrap(NKJYT_fake_script)()
+local function PQCGOA_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local skyboxId = "rbxassetid://107884974004469"
+		local sky = Instance.new("Sky")
+		sky.SkyboxBk = skyboxId
+		sky.SkyboxDn = skyboxId
+		sky.SkyboxFt = skyboxId
+		sky.SkyboxLf = skyboxId
+		sky.SkyboxRt = skyboxId
+		sky.SkyboxUp = skyboxId
+		sky.Parent = game.Lighting
+	end)
+end
+coroutine.wrap(PQCGOA_fake_script)()
+local function WWVTQ_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	local button = script.Parent
+	
+	local function applyParticles(root)
+		for _, v in ipairs(root:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("MeshPart") then
+				local particle = Instance.new("ParticleEmitter")
+				particle.Texture = "rbxassetid://107884974004469"
+				particle.Color = ColorSequence.new(Color3.new(1, 0, 0))
+				particle.Size = NumberSequence.new(3.5)
+				particle.Lifetime = NumberRange.new(2)
+				particle.Rate = 10
+				particle.Parent = v
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		applyParticles(game.Workspace)
+	end)
+end
+coroutine.wrap(WWVTQ_fake_script)()
+local function WADYLK_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	local button = script.Parent
+	
+	local music = Instance.new("Sound")
+	music.SoundId = "rbxassetid://1839246711"
+	music.Volume = 12
+	music.Looped = true
+	music.Parent = game.SoundService
+	
+	button.MouseButton1Click:Connect(function()
+		music:Play()
+	end)
+end
+coroutine.wrap(WADYLK_fake_script)()
+local function XBLY_fake_script() -- TextButton_5.Script 
+	local script = Instance.new('Script', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		Lighting.TimeOfDay = "15:00"
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+	end)
+end
+coroutine.wrap(XBLY_fake_script)()
+local function FDHRHH_fake_script() -- TextButton_6.Script 
+	local script = Instance.new('Script', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		require(96184029574075)("ughuhh09")
+	end)
+end
+coroutine.wrap(FDHRHH_fake_script)()
+local function XMXDSO_fake_script() -- TextButton_7.Script 
+	local script = Instance.new('Script', TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		require(132592022786319).SFV3PC("ughuhh09")
+	end)
+end
+coroutine.wrap(XMXDSO_fake_script)()
